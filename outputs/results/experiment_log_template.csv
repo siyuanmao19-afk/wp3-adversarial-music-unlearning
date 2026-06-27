@@ -1,0 +1,3 @@
+experiment_id,date,member,model,method,target_style,dataset_version,prompt_list_version,seed,config_file,checkpoint_path,output_audio_path,evaluation_result_path,status,notes
+musicgen_baseline_jazzpiano_YYYYMMDD_seed1,YYYY-MM-DD,C,musicgen-small,baseline,jazz_piano,forget_v1_retain_v1,prompts_v1,1,configs/experiment_template.yaml,,outputs/audio_before/,outputs/results/,planned,
+

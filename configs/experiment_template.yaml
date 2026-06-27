@@ -1,0 +1,40 @@
+experiment:
+  id: "musicgen_baseline_jazzpiano_YYYYMMDD_seed1"
+  date: "YYYY-MM-DD"
+  member: "C"
+  status: "planned"
+
+model:
+  name: "musicgen-small"
+  checkpoint: ""
+  generation_config: ""
+
+method:
+  name: "baseline"
+  type: "before_unlearning"
+  notes: ""
+
+data:
+  target_style: "jazz_piano"
+  forget_set_version: "forget_v1"
+  retain_set_version: "retain_v1"
+  prompt_list_version: "prompts_v1"
+
+generation:
+  prompt_types:
+    - target
+    - retain
+  seeds:
+    - 1
+    - 2
+  output_dir: "outputs/audio_before"
+
+evaluation:
+  discriminator_checkpoint: ""
+  metrics:
+    - target_probability
+    - clap_prompt_score
+    - fad_score
+    - human_quality_score
+  result_path: "outputs/results/result_table.csv"
+

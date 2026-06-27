@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Large experiment outputs
+data/forget_set/*
+data/retain_set/*
+outputs/audio_before/*
+outputs/audio_after/*
+outputs/checkpoints/*
+outputs/logs/*
+*.wav
+*.mp3
+*.flac
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Keep directory placeholders
+!data/forget_set/.gitkeep
+!data/retain_set/.gitkeep
+!outputs/audio_before/.gitkeep
+!outputs/audio_after/.gitkeep
+!outputs/checkpoints/.gitkeep
+!outputs/logs/.gitkeep
+
